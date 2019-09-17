@@ -1,0 +1,58 @@
+
+  <!--
+<mat-form-field>
+  <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+</div>
+
+<div>
+<mat-form-field>
+  <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+</div>
+-->
+<!-- <mat-form-field>
+  <input matInput [matDatepicker]="picker1" placeholder="Première date" [formControl]="date1">
+  <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+  <mat-datepicker #picker1></mat-datepicker>
+</mat-form-field>
+<br/>
+<mat-form-field>
+  <input matInput [matDatepicker]="picker2" placeholder="deuxieme date"
+         [formControl]="date2">
+  <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+  <mat-datepicker #picker2></mat-datepicker>
+</mat-form-field>
+<div>
+    <button (click)="compare()">
+    comparer
+    </button>
+    </div>
+    <div>
+     {{ date1.value }}
+     </div>
+     <div>
+        {{ date2.value }}
+     </div> -->
+     <p>
+     <input type="date" name="date1" [(ngModel)]="this.table.date1">
+     </p>
+     <br/>
+     <p>
+     <input type="date" name="date2" [(ngModel)]="this.table.date2">
+     </p>
+     <br/>
+
+     <button (click)="compare()">
+        comparer
+      </button>
+      <br/>
+      
+        <p>
+            {{ reponse }}
+        </p>
+        
